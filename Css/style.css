@@ -1,0 +1,75 @@
+:root{
+    --background-color: rgb(122, 255, 224);
+    --header-background-color: #1fe8cb;
+    --header-font-color:#35707d;
+    --fonts: Impact, fantasy;
+    --main-message-color: green;
+    --field-background-color: rgb(100, 181, 173) ;
+    --field-background-color-hover: rgb(89, 155, 148);
+    --border-color: rgb(173, 172, 172);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonts);
+}
+
+body{
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--header-background-color);
+    min-height: 100px;
+    height: 20vh;
+}
+
+.title{
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 7rem;
+    color: var(--header-font-color);
+}
+
+/* MAIN */
+.main{
+    padding-block: 1rem;
+}
+
+.message{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: auto;
+    border: 2px solid var(--border-color);
+    height: 450px;
+    width: 450px;
+}
+
+.field{
+    width: 145px;
+    height: 145px;
+    border: 2px solid var(--border-color);
+    background-color: var(--field-background-color);
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 100px;
+    user-select: none;
+}
+
+.field:hover{
+    
+}
+
